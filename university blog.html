@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Blog</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        
+        header {
+            background-color: #163a5f;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 5px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #102a43;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 18px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #f4c542;
+        }
+
+        /* Main Container */
+        .container {
+            display: flex;
+            gap: 25px;
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 15px;
+            align-items: flex-start;
+        }
+
+        main {
+            flex: 3;
+        }
+
+        /* Blog Posts */
+        .blog-post {
+            background-color: white;
+            padding: 22px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-post h2 {
+            color: #163a5f;
+            margin-bottom: 5px;
+        }
+
+        .date {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .blog-post img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .blog-post p {
+            margin-bottom: 15px;
+        }
+
+        /* Read More Button */
+        .read-more {
+            display: inline-block;
+            background-color: #163a5f;
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+
+        .read-more:hover {
+            background-color: #f4c542;
+            color: #222;
+        }
+
+        /* Sidebar */
+        aside {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        aside h2 {
+            color: #163a5f;
+            font-size: 21px;
+            margin: 15px 0 10px;
+        }
+
+        aside h2:first-child {
+            margin-top: 0;
+        }
+
+        aside p {
+            margin-bottom: 15px;
+        }
+
+        aside ul {
+            padding-left: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #102a43;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            main,
+            aside {
+                width: 100%;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 10px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="home">
+        <h1>University Blog</h1>
+        <p>Knowledge, Ideas & Campus Life</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#blogs">Blogs</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- Blog Posts -->
+        <main id="blogs">
+
+            <article class="blog-post">
+                <h2>Welcome to University Life</h2>
+                <p class="date">October 21, 2026</p>
+
+                <img src="https://placehold.co/700x250?text=University+Life"
+                     alt="University Life">
+
+                <p>
+                    University life is an exciting journey full of learning,
+                    friendship, and new experiences. Students develop skills,
+                    explore new ideas, and prepare for their future careers.
+                </p>
+
+                <a href="#about" class="read-more">Read More</a>
+            </article>
+
+            <article class="blog-post">
+                <h2>Importance of Technology in Education</h2>
+                <p class="date">October 18, 2026</p>
+
+                <img src="https://placehold.co/700x250?text=Technology+in+Education"
+                     alt="Technology in Education">
+
+                <p>
+                    Technology has changed the way students learn.
+                    Online courses, digital libraries, and educational
+                    software help students gain knowledge more effectively.
+                </p>
+
+                <a href="#about" class="read-more">Read More</a>
+            </article>
+
+            <article class="blog-post">
+                <h2>Tips for Successful Students</h2>
+                <p class="date">October 15, 2026</p>
+
+                <img src="https://placehold.co/700x250?text=Student+Success"
+                     alt="Student Success">
+
+                <p>
+                    Successful students manage their time, attend classes,
+                    complete assignments, and revise their lessons regularly.
+                    Hard work and consistency are keys to success.
+                </p>
+
+                <a href="#about" class="read-more">Read More</a>
+            </article>
+
+        </main>
+
+        <!-- Sidebar -->
+        <aside id="about">
+
+            <h2>About Us</h2>
+            <p>
+                Welcome to our University Blog! We share educational
+                articles, student experiences, campus news, and useful tips.
+            </p>
+
+            <h2>Categories</h2>
+            <ul>
+                <li>Education</li>
+                <li>Technology</li>
+                <li>Campus Life</li>
+                <li>Student Success</li>
+            </ul>
+
+            <h2>Latest News</h2>
+            <p>
+                Admissions and campus activity updates will be shared here.
+            </p>
+
+        </aside>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2026 University Blog | All Rights Reserved</p>
+        <p>Email: universityblog@example.com</p>
+    </footer>
+
+</body>
+</html>
+
